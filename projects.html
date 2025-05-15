@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Showcasing projects by CHAP CHAP Clothing Brand." />
+  <meta name="keywords" content="portfolio, chap chap, clothing, fashion, projects" />
+  <meta name="author" content="Augustino Angelo Kalolo" />
+  <title>Projects | CHAP CHAP</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1>CHAP CHAP</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="survey.html">Survey</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="projects-container">
+    <h2>My Projects</h2>
+    <section class="grid-3">
+      <article class="project-card">
+        <h3>Project 1: CHAP CHAP Website</h3>
+        <p>This is the official CHAP CHAP clothing brand site.</p>
+        <button onclick="toggleDetails(this)">Show Details</button>
+        <div class="details hidden">
+          <p>Built with HTML, CSS, and JS to showcase the brand and services.</p>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <h3>Project 2: Product Catalog</h3>
+        <p>An interactive catalog for clothing items.</p>
+        <button onclick="toggleDetails(this)">Show Details</button>
+        <div class="details hidden">
+          <p>Includes filters, pricing, categories, and responsive design.</p>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <h3>Project 3: Online Order Form</h3>
+        <p>A form to order clothes directly from the website.</p>
+        <button onclick="toggleDetails(this)">Show Details</button>
+        <div class="details hidden">
+          <p>Includes form validation, email notification, and clean UI.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CHAP CHAP Clothing. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleDetails(button) {
+      const details = button.nextElementSibling;
+      details.classList.toggle("hidden");
+      button.textContent = details.classList.contains("hidden") ? "Show Details" : "Hide Details";
+    }
+  <script src="js/script.js"></script>
+</body>
+</html>
+

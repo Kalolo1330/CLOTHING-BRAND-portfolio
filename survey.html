@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Customer feedback survey for CHAP CHAP Clothing." />
+  <meta name="keywords" content="survey, feedback, chap chap, clothing" />
+  <meta name="author" content="Augustino Angelo Kalolo" />
+  <title>Survey | CHAP CHAP</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1>CHAP CHAP</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="survey.html">Survey</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="survey-container">
+    <h2>We'd Love Your Feedback</h2>
+    <form id="surveyForm" onsubmit="return confirm('Are you sure you want to submit?')">
+      <!-- RADIO BUTTONS -->
+      <fieldset>
+        <legend>How did you hear about us?</legend>
+        <label><input type="radio" name="source" value="social" required> Social Media</label><br>
+        <label><input type="radio" name="source" value="friend"> Friend</label><br>
+        <label><input type="radio" name="source" value="ads"> Online Ads</label>
+      </fieldset>
+
+      <!-- CHECKBOXES -->
+      <fieldset>
+        <legend>What products do you like most?</legend>
+        <label><input type="checkbox" name="product" value="tshirts"> T-Shirts</label><br>
+        <label><input type="checkbox" name="product" value="hoodies"> Hoodies</label><br>
+        <label><input type="checkbox" name="product" value="caps"> Caps</label><br>
+        <label><input type="checkbox" name="product" value="bags"> Bags</label>
+      </fieldset>
+
+      <!-- TEXT AREA -->
+      <label for="feedback">Additional Feedback</label><br>
+      <textarea id="feedback" name="feedback" rows="4" placeholder="Tell us what we can improve..."></textarea><br>
+
+      <!-- EMAIL WITH VALIDATION -->
+      <label for="email">Your Email *</label><br>
+      <input type="email" id="email" name="email" required /><br>
+
+      <button type="submit">Submit Survey</button>
+      <button type="reset">Reset Form</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CHAP CHAP Clothing. All rights reserved.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
