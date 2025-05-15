@@ -4,7 +4,7 @@ Welcome to the official portfolio website for **CHAP CHAP**, a fictional but cre
 
 ## 🌐 Live Preview
 
-*(Optional)* You can add your live site link here if hosted (e.g., GitHub Pages, Netlify).
+You can acess my Portifolio via GITHUB-link     **https://github.com/Kalolo1330/CLOTHING-BRAND-portfolio.git**
 
  📁 Project Structure
 CHAP-CHAP/
